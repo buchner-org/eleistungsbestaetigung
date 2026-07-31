@@ -1,0 +1,27 @@
+<Composition xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="https://e-lb.de/fhir/StructureDefinition/KK_ELB_ResponseComposition" />
+	</meta>
+	<status value="final" />
+	<type>
+		<coding>
+			<system value="http://dvmd.de/fhir/CodeSystem/kdl" />
+			<code value="AM190107" />
+		</coding>
+	</type>
+	<date value="2022-06-19T08:00:00Z" />
+	<author>
+		<identifier>
+			<system value="http://fhir.de/sid/arge-ik/iknr" />
+			<value value="123456780" />
+		</identifier>
+	</author>
+	<title value="Elektronische Leistungsbestätigung" />
+	<section>
+		<entry>
+			<!-- Referenz auf ChargeItem -->
+			<reference value="urn:uuid:55522e3e-cb4a-55b6-77f8-dc9dbdb111c2" />
+		</entry>
+	</section>
+</Composition>

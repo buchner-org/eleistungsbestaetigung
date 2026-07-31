@@ -1,0 +1,62 @@
+<ChargeItem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="https://e-lb.de/fhir/StructureDefinition/KK_ELB_ChargeItem" />
+		<security>
+			<system value="https://e-lb.de/fhir/CodeSystem/KK_ELB_CS_Nutzungsbedingung_Version"/>
+			<code value="1"/>
+		</security>
+	</meta>
+	<extension url="https://e-lb.de/fhir/StructureDefinition/KK_ELB_Payor">
+		<valueIdentifier>
+			<system value="http://fhir.de/sid/arge-ik/iknr" />
+			<value value="123456780" />
+		</valueIdentifier>
+	</extension>
+	<identifier>
+		<system value="urn:ietf:rfc:3986" />
+		<value value="urn:uuid:11122e3e-cb4a-55b6-77f8-dc9dbdb111c2" />
+	</identifier>
+	<status value="unknown" />
+	<code>
+		<coding>
+			<system value="https://e-lb.de/fhir/sid/KK_ELB_ChargeItemCode" />
+			<code value="0230" />
+		</coding>
+	</code>
+	<subject>
+		<identifier>
+			<system value="http://fhir.de/sid/gkv/kvid-10" />
+			<value value="K121212345" />
+		</identifier>
+	</subject>
+	<occurrencePeriod>
+		<start value="2022-06-12T16:50:00+00:00" />
+		<end value="2022-06-12T17:50:00+00:00" />
+	</occurrencePeriod>
+	<performer>
+		<function>
+			<coding>
+				<system value="https://e-lb.de/fhir/CodeSystem/KK_ELB_SGS" />
+				<code value="C" />
+			</coding>
+		</function>
+		<actor>
+			<type value="Organization" />
+			<identifier>
+				<system value="http://fhir.de/sid/arge-ik/iknr" />
+				<value value="987654321" />
+			</identifier>
+			<display value="Praxis Schneider und Co." />
+		</actor>
+	</performer>
+	<performer>
+		<actor>
+			<type value="Practitioner" />
+			<identifier>
+				<system value="http://fhir.de/sid/bfarm/lbnr" />
+				<value value="123456789" />
+			</identifier>
+			<display value="Sarah Schneider" />
+		</actor>
+	</performer>
+</ChargeItem>
